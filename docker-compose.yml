@@ -13,14 +13,26 @@
       - "8080:8080"
     networks:
       - edge
-    healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 15s
+
+  caddy:
+    image: caddy:2
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /opt/levearekonstrukt/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - edge
 
 networks:
   edge:
     external: true
     name: revicall_edge
+
+volumes:
+  caddy_data:
+  caddy_config:
