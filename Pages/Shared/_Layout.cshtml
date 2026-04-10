@@ -1,8 +1,13 @@
-﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> Localizer
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
 
 @{
     var kultura = ViewContext.RouteData.Values["kultura"]?.ToString()?.ToLowerInvariant() ?? "cs";
-    var baseUrl = $"{Context.Request.Scheme}://{Context.Request.Host}";
+    var supportedCultures = new[] { "cs", "en", "de", "uk" };
+
+    var scheme = Context.Request.Scheme;
+    var host = Context.Request.Host.Value;
+    var baseUrl = $"{scheme}://{host}";
     var path = Context.Request.Path.Value ?? string.Empty;
 
     string ReplaceCultureInPath(string currentPath, string newCulture)
@@ -12,9 +17,11 @@
             return $"/{newCulture}";
         }
 
-        var segments = currentPath.Split('/', StringSplitOptions.RemoveEmptyEntries).ToList();
+        var segments = currentPath
+            .Split('/', StringSplitOptions.RemoveEmptyEntries)
+            .ToList();
 
-        if (segments.Count > 0 && (segments[0] == "cs" || segments[0] == "en" || segments[0] == "de" || segments[0] == "uk"))
+        if (segments.Count > 0 && supportedCultures.Contains(segments[0]))
         {
             segments[0] = newCulture;
         }
@@ -26,10 +33,25 @@
         return "/" + string.Join('/', segments);
     }
 
-    var csUrl = $"{baseUrl}{ReplaceCultureInPath(path, "cs")}";
-    var enUrl = $"{baseUrl}{ReplaceCultureInPath(path, "en")}";
-    var deUrl = $"{baseUrl}{ReplaceCultureInPath(path, "de")}";
-    var ukUrl = $"{baseUrl}{ReplaceCultureInPath(path, "uk")}";
+    string BuildAbsoluteUrl(string relativePath)
+    {
+        return $"{baseUrl}{relativePath}";
+    }
+
+    string BuildSectionUrl(string culture, string sectionId)
+    {
+        return $"/{culture}#{sectionId}";
+    }
+
+    var csPath = ReplaceCultureInPath(path, "cs");
+    var enPath = ReplaceCultureInPath(path, "en");
+    var dePath = ReplaceCultureInPath(path, "de");
+    var ukPath = ReplaceCultureInPath(path, "uk");
+
+    var csUrl = BuildAbsoluteUrl(csPath);
+    var enUrl = BuildAbsoluteUrl(enPath);
+    var deUrl = BuildAbsoluteUrl(dePath);
+    var ukUrl = BuildAbsoluteUrl(ukPath);
 
     var canonicalUrl = kultura switch
     {
@@ -41,8 +63,10 @@
 
     var title = Localizer["PageTitle"];
     var description = Localizer["MetaDescription"];
-}
 
+    // Uprav cestu podle skutečného souboru obrázku
+    var ogImageUrl = BuildAbsoluteUrl("/images/og-image.jpg");
+}
 <!DOCTYPE html>
 <html lang="@kultura">
 <head>
@@ -51,6 +75,7 @@
 
     <title>@title - LEVEA KONSTRUKCE</title>
     <meta name="description" content="@description" />
+    <meta name="robots" content="index,follow" />
 
     <link rel="canonical" href="@canonicalUrl" />
     <link rel="alternate" hreflang="cs" href="@csUrl" />
@@ -64,7 +89,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="@canonicalUrl" />
     <meta property="og:site_name" content="LEVEA KONSTRUKCE" />
+    <meta property="og:image" content="@ogImageUrl" />
+    <meta property="og:locale" content="@kultura" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@title - LEVEA KONSTRUKCE" />
+    <meta name="twitter:description" content="@description" />
+    <meta name="twitter:image" content="@ogImageUrl" />
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
@@ -76,11 +109,11 @@
             </a>
 
             <nav class="main-nav" aria-label="@Localizer["NavAriaLabel"]">
-                <a href="#o-nas">@Localizer["NavAbout"]</a>
-                <a href="#sluzby">@Localizer["NavServices"]</a>
-                <a href="#realizace">@Localizer["NavProjects"]</a>
-                <a href="#spoluprace">@Localizer["NavProcess"]</a>
-                <a href="#kontakt">@Localizer["NavContact"]</a>
+                <a href="@BuildSectionUrl(kultura, "o-nas")">@Localizer["NavAbout"]</a>
+                <a href="@BuildSectionUrl(kultura, "sluzby")">@Localizer["NavServices"]</a>
+                <a href="@BuildSectionUrl(kultura, "realizace")">@Localizer["NavProjects"]</a>
+                <a href="@BuildSectionUrl(kultura, "spoluprace")">@Localizer["NavProcess"]</a>
+                <a href="@BuildSectionUrl(kultura, "kontakt")">@Localizer["NavContact"]</a>
             </nav>
 
             <div class="header-right">
@@ -89,19 +122,19 @@
                 <div class="language-switcher" aria-label="@Localizer["LanguageSwitcherAriaLabel"]">
                     @if (kultura != "cs")
                     {
-                        <a href="@ReplaceCultureInPath(path, "cs")">CS</a>
+                        <a href="@csPath">CS</a>
                     }
                     @if (kultura != "en")
                     {
-                        <a href="@ReplaceCultureInPath(path, "en")">EN</a>
+                        <a href="@enPath">EN</a>
                     }
                     @if (kultura != "de")
                     {
-                        <a href="@ReplaceCultureInPath(path, "de")">DE</a>
+                        <a href="@dePath">DE</a>
                     }
                     @if (kultura != "uk")
                     {
-                        <a href="@ReplaceCultureInPath(path, "uk")">UK</a>
+                        <a href="@ukPath">UK</a>
                     }
                 </div>
             </div>
@@ -125,12 +158,38 @@
             </div>
 
             <div class="footer-block footer-languages">
-                <a href="@ReplaceCultureInPath(path, "cs")">CS</a>
-                <a href="@ReplaceCultureInPath(path, "en")">EN</a>
-                <a href="@ReplaceCultureInPath(path, "de")">DE</a>
-                <a href="@ReplaceCultureInPath(path, "uk")">UK</a>
+                <a href="@csPath">CS</a>
+                <a href="@enPath">EN</a>
+                <a href="@dePath">DE</a>
+                <a href="@ukPath">UK</a>
             </div>
         </div>
     </footer>
+    <a href="https://www.toplist.cz"
+           id="toplistcz1841576"
+           title="TOPlist"
+           style="display:none;">
+
+        <noscript>
+            <img src="https://toplist.cz/count.asp?id=1841576&njs=1"
+                 border="0"
+                 alt="TOPlist"
+                 width="1"
+                 height="1" />
+        </noscript>
+
+        <script>
+                    (function(d,e,s) {
+                        d.getElementById('toplistcz1841576').innerHTML =
+                        '<img src="https://toplist.cz/count.asp?id=1841576&http=' +
+                        e(d.referrer) + '&t=' + e(d.title) +
+                        '&l=' + e(d.URL) + '&wi=' + e(s.width) +
+                        '&he=' + e(s.height) + '&cd=' +
+                        e(s.colorDepth) +
+                        '" width="1" height="1" border="0" alt="TOPlist" />';
+                    }(document,encodeURIComponent,window.screen))
+        </script>
+
+    </a>
 </body>
 </html>
