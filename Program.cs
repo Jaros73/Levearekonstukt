@@ -1,4 +1,6 @@
 using System.Globalization;
+using System.Net;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.Extensions.Options;
@@ -29,17 +31,35 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 
-    options.RequestCultureProviders = new IRequestCultureProvider[]
-    {
+    options.RequestCultureProviders =
+    [
         new RouteDataRequestCultureProvider
         {
             RouteDataStringKey = "kultura",
             UIRouteDataStringKey = "kultura"
         }
-    };
+    ];
+});
+
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders =
+        ForwardedHeaders.XForwardedFor |
+        ForwardedHeaders.XForwardedProto |
+        ForwardedHeaders.XForwardedHost;
+
+    options.KnownIPNetworks.Clear();
+    options.KnownProxies.Clear();
+
+    // Docker edge síť
+    options.KnownIPNetworks.Add(new System.Net.IPNetwork(IPAddress.Parse("10.89.0.0"), 24));
+
+    options.ForwardLimit = 2;
 });
 
 var app = builder.Build();
+
+app.UseForwardedHeaders();
 
 if (!app.Environment.IsDevelopment())
 {
@@ -57,9 +77,11 @@ var localizationOptions = app.Services
 
 app.UseRequestLocalization(localizationOptions);
 
+app.MapGet("/health", () => Results.Ok("OK"));
+
 app.MapGet("/", context =>
 {
-    context.Response.Redirect("/cs");
+    context.Response.Redirect("/cs", permanent: false);
     return Task.CompletedTask;
 });
 

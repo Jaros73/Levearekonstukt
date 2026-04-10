@@ -1,0 +1,26 @@
+﻿services:
+  rekonstrukce-web:
+    container_name: rekonstrukce-web
+    build:
+      context: .
+      dockerfile: Infra/Dockerfile
+    image: rekonstrukce/web:local
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:8080
+    expose:
+      - "8080"
+    networks:
+      - edge
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+
+networks:
+  edge:
+    external: true
+    name: revicall_edge

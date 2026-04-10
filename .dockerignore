@@ -1,0 +1,13 @@
+﻿bin/
+obj/
+.git/
+.gitignore
+.gitattributes
+.vs/
+.idea/
+*.user
+*.suo
+*.swp
+*.tmp
+Dockerfile
+docker-compose.override.yml
