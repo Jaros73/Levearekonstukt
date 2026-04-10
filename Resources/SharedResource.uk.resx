@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -12,11 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-
   <data name="PageTitle" xml:space="preserve">
     <value>LEVEA Rekonstrukt | Реконструкція квартир, будинків і фасадів</value>
   </data>
-
   <data name="HeroKicker" xml:space="preserve">
     <value>Надійні будівельні роботи</value>
   </data>
@@ -44,7 +147,6 @@
   <data name="HeroImageAlt" xml:space="preserve">
     <value>Реконструкція інтер’єру та будівельні роботи</value>
   </data>
-
   <data name="AboutKicker" xml:space="preserve">
     <value>Про нас</value>
   </data>
@@ -69,56 +171,48 @@
   <data name="AboutImageAlt" xml:space="preserve">
     <value>Приклад будівельної реалізації компанії LEVEA Rekonstrukt</value>
   </data>
-
   <data name="ServicesKicker" xml:space="preserve">
     <value>Наші послуги</value>
   </data>
   <data name="ServicesTitle" xml:space="preserve">
     <value>Що ми можемо для вас зробити</value>
   </data>
-
   <data name="Service1Title" xml:space="preserve">
     <value>Реконструкція квартир</value>
   </data>
   <data name="Service1Text" xml:space="preserve">
     <value>Повна або часткова реконструкція квартир, включно зі зміною планування, оздобленням поверхонь і будівельними деталями.</value>
   </data>
-
   <data name="Service2Title" xml:space="preserve">
     <value>Реконструкція приватних будинків</value>
   </data>
   <data name="Service2Text" xml:space="preserve">
     <value>Оновлення старіших будинків, модернізація інтер’єрів та будівельні зміни для кращої функціональності, комфорту й довговічності.</value>
   </data>
-
   <data name="Service3Title" xml:space="preserve">
     <value>Реконструкція апартаментів</value>
   </data>
   <data name="Service3Text" xml:space="preserve">
     <value>Оновлення апартаментів для власного проживання або оренди з акцентом на практичність, чистий вигляд і якісне виконання.</value>
   </data>
-
   <data name="Service4Title" xml:space="preserve">
     <value>Фасади та зовнішні роботи</value>
   </data>
   <data name="Service4Text" xml:space="preserve">
     <value>Ремонт фасадів, оновлення поверхонь та інші зовнішні роботи, які покращують вигляд будівлі та її захист від погоди.</value>
   </data>
-
   <data name="Service5Title" xml:space="preserve">
     <value>Мулярські та оздоблювальні роботи</value>
   </data>
   <data name="Service5Text" xml:space="preserve">
     <value>Штукатурка, вирівнювання поверхонь, дрібні будівельні втручання та інші роботи, потрібні для якісного завершення проєкту.</value>
   </data>
-
   <data name="Service6Title" xml:space="preserve">
     <value>Будівельні роботи під замовлення</value>
   </data>
   <data name="Service6Text" xml:space="preserve">
     <value>Кожен об’єкт різний. Ми запропонуємо відповідний порядок робіт залежно від реального стану будівлі та ваших вимог.</value>
   </data>
-
   <data name="ProjectsKicker" xml:space="preserve">
     <value>Реалізації</value>
   </data>
@@ -140,42 +234,36 @@
   <data name="ProjectImage4Alt" xml:space="preserve">
     <value>Оновлення фасаду та зовнішніх частин будівлі</value>
   </data>
-
   <data name="ProcessKicker" xml:space="preserve">
     <value>Співпраця</value>
   </data>
   <data name="ProcessTitle" xml:space="preserve">
     <value>Простий і зрозумілий процес</value>
   </data>
-
   <data name="ProcessStep1Title" xml:space="preserve">
     <value>1. Контакт і запит</value>
   </data>
   <data name="ProcessStep1Text" xml:space="preserve">
     <value>Зв’яжіться з нами телефоном або електронною поштою та коротко опишіть, що саме потрібно зробити і в якому обсязі.</value>
   </data>
-
   <data name="ProcessStep2Title" xml:space="preserve">
     <value>2. Консультація та пропозиція рішення</value>
   </data>
   <data name="ProcessStep2Text" xml:space="preserve">
     <value>Ми оцінимо стан об’єкта, уточнимо можливості реалізації та запропонуємо відповідний обсяг робіт.</value>
   </data>
-
   <data name="ProcessStep3Title" xml:space="preserve">
     <value>3. Виконання робіт</value>
   </data>
   <data name="ProcessStep3Text" xml:space="preserve">
     <value>Після узгодження терміну ми починаємо роботи. Під час реалізації дбаємо про якість виконання, комунікацію та порядок на місці.</value>
   </data>
-
   <data name="ProcessStep4Title" xml:space="preserve">
     <value>4. Передача готового результату</value>
   </data>
   <data name="ProcessStep4Text" xml:space="preserve">
     <value>Після завершення ми разом перевіримо результат і передамо готову роботу, підготовлену до використання.</value>
   </data>
-
   <data name="ContactKicker" xml:space="preserve">
     <value>Контакт</value>
   </data>
@@ -190,9 +278,6 @@
   </data>
   <data name="ContactButtonEmail" xml:space="preserve">
     <value>Написати e-mail</value>
-  </data>
-  <data name="ContactMapPlaceholder" xml:space="preserve">
-    <value>Тут може бути карта або зона обслуговування компанії</value>
   </data>
   <data name="NavAbout" xml:space="preserve">
     <value>Про нас</value>

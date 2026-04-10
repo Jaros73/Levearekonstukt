@@ -188,7 +188,7 @@ a {
     padding: 0.85rem 1.4rem;
     border-radius: 999px;
     font-weight: 700;
-    transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+    transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
     .button:hover {
@@ -208,13 +208,14 @@ a {
 
 .button-secondary {
     background: transparent;
-    color: var(--text-light);
-    border: 1px solid var(--border-dark);
+    color: #b89457;
+    border: 1px solid #d8c29a;
 }
 
     .button-secondary:hover {
-        border-color: var(--accent-strong);
-        color: var(--accent-strong);
+        background: #f4ecdf;
+        color: #a8823f;
+        border-color: #caa867;
     }
 
 .hero-benefits {
@@ -450,21 +451,31 @@ a {
 }
 
 .contact-map {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     min-height: 100%;
 }
 
-.map-placeholder {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 22px;
-    background: linear-gradient(rgba(17, 17, 17, 0.35), rgba(17, 17, 17, 0.35)), linear-gradient(135deg, #d9ccb4, #bfa57b);
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    padding: 2rem;
+.contact-map-frame {
+    width: 100%;
+    min-height: 350px;
+    border: 0;
+    border-radius: 16px;
 }
+
+.contact-address {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+    .contact-address strong {
+        display: block;
+        margin-bottom: 0.35rem;
+        color: #1f1f1f;
+    }
 
 .site-footer {
     background: #111111;
@@ -583,5 +594,9 @@ a {
 
     .phone-link {
         font-size: 0.95rem;
+    }
+
+    .contact-map-frame {
+        min-height: 280px;
     }
 }
