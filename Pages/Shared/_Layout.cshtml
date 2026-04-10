@@ -1,0 +1,136 @@
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> Localizer
+
+@{
+    var kultura = ViewContext.RouteData.Values["kultura"]?.ToString()?.ToLowerInvariant() ?? "cs";
+    var baseUrl = $"{Context.Request.Scheme}://{Context.Request.Host}";
+    var path = Context.Request.Path.Value ?? string.Empty;
+
+    string ReplaceCultureInPath(string currentPath, string newCulture)
+    {
+        if (string.IsNullOrWhiteSpace(currentPath) || currentPath == "/")
+        {
+            return $"/{newCulture}";
+        }
+
+        var segments = currentPath.Split('/', StringSplitOptions.RemoveEmptyEntries).ToList();
+
+        if (segments.Count > 0 && (segments[0] == "cs" || segments[0] == "en" || segments[0] == "de" || segments[0] == "uk"))
+        {
+            segments[0] = newCulture;
+        }
+        else
+        {
+            segments.Insert(0, newCulture);
+        }
+
+        return "/" + string.Join('/', segments);
+    }
+
+    var csUrl = $"{baseUrl}{ReplaceCultureInPath(path, "cs")}";
+    var enUrl = $"{baseUrl}{ReplaceCultureInPath(path, "en")}";
+    var deUrl = $"{baseUrl}{ReplaceCultureInPath(path, "de")}";
+    var ukUrl = $"{baseUrl}{ReplaceCultureInPath(path, "uk")}";
+
+    var canonicalUrl = kultura switch
+    {
+        "en" => enUrl,
+        "de" => deUrl,
+        "uk" => ukUrl,
+        _ => csUrl
+    };
+
+    var title = Localizer["PageTitle"];
+    var description = Localizer["MetaDescription"];
+}
+
+<!DOCTYPE html>
+<html lang="@kultura">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@title - LEVEA KONSTRUKCE</title>
+    <meta name="description" content="@description" />
+
+    <link rel="canonical" href="@canonicalUrl" />
+    <link rel="alternate" hreflang="cs" href="@csUrl" />
+    <link rel="alternate" hreflang="en" href="@enUrl" />
+    <link rel="alternate" hreflang="de" href="@deUrl" />
+    <link rel="alternate" hreflang="uk" href="@ukUrl" />
+    <link rel="alternate" hreflang="x-default" href="@csUrl" />
+
+    <meta property="og:title" content="@title - LEVEA KONSTRUKCE" />
+    <meta property="og:description" content="@description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@canonicalUrl" />
+    <meta property="og:site_name" content="LEVEA KONSTRUKCE" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/@kultura">
+                <span class="brand-title">LEVEA</span>
+                <span class="brand-subtitle">KONSTRUKCE</span>
+            </a>
+
+            <nav class="main-nav" aria-label="@Localizer["NavAriaLabel"]">
+                <a href="#o-nas">@Localizer["NavAbout"]</a>
+                <a href="#sluzby">@Localizer["NavServices"]</a>
+                <a href="#realizace">@Localizer["NavProjects"]</a>
+                <a href="#spoluprace">@Localizer["NavProcess"]</a>
+                <a href="#kontakt">@Localizer["NavContact"]</a>
+            </nav>
+
+            <div class="header-right">
+                <a class="phone-link" href="tel:+420721077958">+420 721 077 958</a>
+
+                <div class="language-switcher" aria-label="@Localizer["LanguageSwitcherAriaLabel"]">
+                    @if (kultura != "cs")
+                    {
+                        <a href="@ReplaceCultureInPath(path, "cs")">CS</a>
+                    }
+                    @if (kultura != "en")
+                    {
+                        <a href="@ReplaceCultureInPath(path, "en")">EN</a>
+                    }
+                    @if (kultura != "de")
+                    {
+                        <a href="@ReplaceCultureInPath(path, "de")">DE</a>
+                    }
+                    @if (kultura != "uk")
+                    {
+                        <a href="@ReplaceCultureInPath(path, "uk")">UK</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-block">
+                <strong>LEVEA KONSTRUKCE</strong>
+                <span>IČO: 24628204</span>
+            </div>
+
+            <div class="footer-block">
+                <a href="tel:+420721077958">+420 721 077 958</a>
+                <a href="mailto:levearekonstrukt@seznam.cz">levearekonstrukt@seznam.cz</a>
+            </div>
+
+            <div class="footer-block footer-languages">
+                <a href="@ReplaceCultureInPath(path, "cs")">CS</a>
+                <a href="@ReplaceCultureInPath(path, "en")">EN</a>
+                <a href="@ReplaceCultureInPath(path, "de")">DE</a>
+                <a href="@ReplaceCultureInPath(path, "uk")">UK</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

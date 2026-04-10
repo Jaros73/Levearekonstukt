@@ -1,0 +1,210 @@
+﻿@page "/{kultura:regex(^cs|en|de|uk$)?}"
+@model Rekonstrukce.Pages.IndexModel
+@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResource> Localizer
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+}
+
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="hero-kicker">@Localizer["HeroKicker"]</p>
+                <h1>@Localizer["HeroTitle"]</h1>
+                <p class="hero-text">@Localizer["HeroText"]</p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="tel:+420721077958">
+                        @Localizer["HeroButtonCall"]
+                    </a>
+                    <a class="button button-secondary" href="#kontakt">
+                        @Localizer["HeroButtonContact"]
+                    </a>
+                </div>
+
+                <ul class="hero-benefits">
+                    <li>@Localizer["HeroBenefit1"]</li>
+                    <li>@Localizer["HeroBenefit2"]</li>
+                    <li>@Localizer["HeroBenefit3"]</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual">
+                <img src="~/images/hero-placeholder.jpg"
+                     alt="@Localizer["HeroImageAlt"]"
+                     asp-append-version="true" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="o-nas" class="section section-light">
+    <div class="container two-column">
+        <div>
+            <p class="section-kicker">@Localizer["AboutKicker"]</p>
+            <h2>@Localizer["AboutTitle"]</h2>
+            <p class="section-text">@Localizer["AboutText1"]</p>
+            <p class="section-text">@Localizer["AboutText2"]</p>
+
+            <ul class="check-list">
+                <li>@Localizer["AboutBullet1"]</li>
+                <li>@Localizer["AboutBullet2"]</li>
+                <li>@Localizer["AboutBullet3"]</li>
+            </ul>
+        </div>
+
+        <div class="image-card">
+            <img src="~/images/realization-1.jpg"
+                 alt="@Localizer["AboutImageAlt"]"
+                 asp-append-version="true" />
+        </div>
+    </div>
+</section>
+
+<section id="sluzby" class="section section-dark">
+    <div class="container">
+        <p class="section-kicker center">@Localizer["ServicesKicker"]</p>
+        <h2 class="center">@Localizer["ServicesTitle"]</h2>
+
+        <div class="cards-grid services-grid">
+            <article class="service-card">
+                <h3>@Localizer["Service1Title"]</h3>
+                <p>@Localizer["Service1Text"]</p>
+            </article>
+
+            <article class="service-card">
+                <h3>@Localizer["Service2Title"]</h3>
+                <p>@Localizer["Service2Text"]</p>
+            </article>
+
+            <article class="service-card">
+                <h3>@Localizer["Service3Title"]</h3>
+                <p>@Localizer["Service3Text"]</p>
+            </article>
+
+            <article class="service-card">
+                <h3>@Localizer["Service4Title"]</h3>
+                <p>@Localizer["Service4Text"]</p>
+            </article>
+
+            <article class="service-card">
+                <h3>@Localizer["Service5Title"]</h3>
+                <p>@Localizer["Service5Text"]</p>
+            </article>
+
+            <article class="service-card">
+                <h3>@Localizer["Service6Title"]</h3>
+                <p>@Localizer["Service6Text"]</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="realizace" class="section section-light">
+    <div class="container">
+        <p class="section-kicker center">@Localizer["ProjectsKicker"]</p>
+        <h2 class="center">@Localizer["ProjectsTitle"]</h2>
+        <p class="section-intro center narrow-text">@Localizer["ProjectsIntro"]</p>
+
+        <div class="gallery-grid">
+            <figure class="gallery-item">
+                <img src="~/images/realization-1.jpg" alt="@Localizer["ProjectImage1Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-2.jpg" alt="@Localizer["ProjectImage2Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-3.jpg" alt="@Localizer["ProjectImage3Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-4.jpg" alt="@Localizer["ProjectImage4Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-5.jpg" alt="@Localizer["ProjectImage5Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-6.jpg" alt="@Localizer["ProjectImage6Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-7.jpg" alt="@Localizer["ProjectImage7Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-8.jpg" alt="@Localizer["ProjectImage8Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-9.jpg" alt="@Localizer["ProjectImage9Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-10.jpg" alt="@Localizer["ProjectImage10Alt"]" asp-append-version="true" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="~/images/realization-11.jpg" alt="@Localizer["ProjectImage11Alt"]" asp-append-version="true" />
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section id="spoluprace" class="section section-dark">
+    <div class="container">
+        <p class="section-kicker center">@Localizer["ProcessKicker"]</p>
+        <h2 class="center">@Localizer["ProcessTitle"]</h2>
+
+        <div class="steps-grid">
+            <article class="step-card">
+                <span class="step-number">1</span>
+                <h3>@Localizer["ProcessStep1Title"]</h3>
+                <p>@Localizer["ProcessStep1Text"]</p>
+            </article>
+
+            <article class="step-card">
+                <span class="step-number">2</span>
+                <h3>@Localizer["ProcessStep2Title"]</h3>
+                <p>@Localizer["ProcessStep2Text"]</p>
+            </article>
+
+            <article class="step-card">
+                <span class="step-number">3</span>
+                <h3>@Localizer["ProcessStep3Title"]</h3>
+                <p>@Localizer["ProcessStep3Text"]</p>
+            </article>
+
+            <article class="step-card">
+                <span class="step-number">4</span>
+                <h3>@Localizer["ProcessStep4Title"]</h3>
+                <p>@Localizer["ProcessStep4Text"]</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="section section-contact">
+    <div class="container contact-card">
+        <div class="contact-content">
+            <p class="section-kicker">@Localizer["ContactKicker"]</p>
+            <h2>@Localizer["ContactTitle"]</h2>
+            <p class="section-text">@Localizer["ContactText"]</p>
+
+            <div class="contact-info">
+                <a class="contact-line" href="tel:+420721077958">+420 721 077 958</a>
+                <a class="contact-line" href="mailto:levearekonstrukt@seznam.cz">levearekonstrukt@seznam.cz</a>
+                <p class="contact-line">IČO: 24628204</p>
+            </div>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="tel:+420721077958">
+                    @Localizer["ContactButtonCall"]
+                </a>
+                <a class="button button-secondary" href="mailto:levearekonstrukt@seznam.cz">
+                    @Localizer["ContactButtonEmail"]
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-map">
+            <div class="map-placeholder">
+                <span>@Localizer["ContactMapPlaceholder"]</span>
+            </div>
+        </div>
+    </div>
+</section>

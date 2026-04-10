@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="PageTitle" xml:space="preserve">
+    <value>LEVEA Rekonstrukt | Rekonstrukce bytů, domů a fasád</value>
+  </data>
+
+  <data name="HeroKicker" xml:space="preserve">
+    <value>Poctivá stavební práce</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Rekonstrukce bytů, domů, apartmánů a fasád bez zbytečných komplikací</value>
+  </data>
+  <data name="HeroText" xml:space="preserve">
+    <value>Provádíme stavební a rekonstrukční práce od menších úprav až po rozsáhlejší realizace. Zakládáme si na domluvě, čistém provedení a spolehlivém průběhu celé zakázky.</value>
+  </data>
+  <data name="HeroButtonCall" xml:space="preserve">
+    <value>Zavolat nyní</value>
+  </data>
+  <data name="HeroButtonContact" xml:space="preserve">
+    <value>Nezávazná poptávka</value>
+  </data>
+  <data name="HeroBenefit1" xml:space="preserve">
+    <value>Rekonstrukce na klíč i dílčí práce</value>
+  </data>
+  <data name="HeroBenefit2" xml:space="preserve">
+    <value>Individuální přístup ke každé zakázce</value>
+  </data>
+  <data name="HeroBenefit3" xml:space="preserve">
+    <value>Důraz na kvalitu, termíny a pořádek</value>
+  </data>
+  <data name="HeroImageAlt" xml:space="preserve">
+    <value>Rekonstrukce interiéru a stavební práce</value>
+  </data>
+
+  <data name="AboutKicker" xml:space="preserve">
+    <value>O nás</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Stavíme na zkušenosti, férovém přístupu a kvalitním výsledku</value>
+  </data>
+  <data name="AboutText1" xml:space="preserve">
+    <value>LEVEA Rekonstrukt se zaměřuje na rekonstrukce interiérů i exteriérů. Pomáháme klientům proměnit starší prostory v moderní, funkční a dlouhodobě udržitelná řešení.</value>
+  </data>
+  <data name="AboutText2" xml:space="preserve">
+    <value>Každý projekt řešíme s ohledem na stav objektu, rozpočet i očekávání investora. Nejdeme cestou zbytečných slibů, ale poctivě odvedené práce a jasné komunikace.</value>
+  </data>
+  <data name="AboutBullet1" xml:space="preserve">
+    <value>Rekonstrukce bytů, rodinných domů a apartmánů</value>
+  </data>
+  <data name="AboutBullet2" xml:space="preserve">
+    <value>Opravy a renovace fasád a venkovních částí objektů</value>
+  </data>
+  <data name="AboutBullet3" xml:space="preserve">
+    <value>Spolehlivý průběh prací od poptávky po dokončení</value>
+  </data>
+  <data name="AboutImageAlt" xml:space="preserve">
+    <value>Ukázka stavební realizace společnosti LEVEA Rekonstrukt</value>
+  </data>
+
+  <data name="ServicesKicker" xml:space="preserve">
+    <value>Naše služby</value>
+  </data>
+  <data name="ServicesTitle" xml:space="preserve">
+    <value>Co pro vás zajistíme</value>
+  </data>
+
+  <data name="Service1Title" xml:space="preserve">
+    <value>Rekonstrukce bytů</value>
+  </data>
+  <data name="Service1Text" xml:space="preserve">
+    <value>Kompletní i částečné rekonstrukce bytových jednotek včetně úprav dispozic, povrchů a stavebních detailů.</value>
+  </data>
+
+  <data name="Service2Title" xml:space="preserve">
+    <value>Rekonstrukce rodinných domů</value>
+  </data>
+  <data name="Service2Text" xml:space="preserve">
+    <value>Obnovy starších domů, modernizace interiérů i stavební úpravy zaměřené na funkčnost, komfort a delší životnost objektu.</value>
+  </data>
+
+  <data name="Service3Title" xml:space="preserve">
+    <value>Rekonstrukce apartmánů</value>
+  </data>
+  <data name="Service3Text" xml:space="preserve">
+    <value>Úpravy apartmánů pro vlastní bydlení i pronájem s důrazem na čistý vzhled, praktičnost a kvalitní provedení.</value>
+  </data>
+
+  <data name="Service4Title" xml:space="preserve">
+    <value>Fasády a venkovní úpravy</value>
+  </data>
+  <data name="Service4Text" xml:space="preserve">
+    <value>Opravy fasád, renovace povrchů a další práce, které zlepší vzhled objektu i jeho ochranu před počasím.</value>
+  </data>
+
+  <data name="Service5Title" xml:space="preserve">
+    <value>Zednické a dokončovací práce</value>
+  </data>
+  <data name="Service5Text" xml:space="preserve">
+    <value>Omítky, štuky, vyrovnání povrchů, drobné stavební zásahy a další práce potřebné pro kvalitní dokončení realizace.</value>
+  </data>
+
+  <data name="Service6Title" xml:space="preserve">
+    <value>Stavební úpravy na míru</value>
+  </data>
+  <data name="Service6Text" xml:space="preserve">
+    <value>Každá nemovitost je jiná. Navrhneme vhodný postup prací podle skutečného stavu objektu a vašeho zadání.</value>
+  </data>
+
+  <data name="ProjectsKicker" xml:space="preserve">
+    <value>Realizace</value>
+  </data>
+  <data name="ProjectsTitle" xml:space="preserve">
+    <value>Ukázky naší práce</value>
+  </data>
+  <data name="ProjectsIntro" xml:space="preserve">
+    <value>Každá zakázka má jiné zadání, rozsah i technický stav. Níže najdete ukázky realizací, na kterých je vidět důraz na detail, funkčnost a celkový výsledek.</value>
+  </data>
+  <data name="ProjectImage1Alt" xml:space="preserve">
+    <value>Rekonstrukce interiéru bytu</value>
+  </data>
+  <data name="ProjectImage2Alt" xml:space="preserve">
+    <value>Stavební úpravy domu</value>
+  </data>
+  <data name="ProjectImage3Alt" xml:space="preserve">
+    <value>Renovace apartmánu</value>
+  </data>
+  <data name="ProjectImage4Alt" xml:space="preserve">
+    <value>Obnova fasády a venkovních částí objektu</value>
+  </data>
+
+  <data name="ProcessKicker" xml:space="preserve">
+    <value>Jak probíhá spolupráce</value>
+  </data>
+  <data name="ProcessTitle" xml:space="preserve">
+    <value>Jednoduchý a srozumitelný postup</value>
+  </data>
+
+  <data name="ProcessStep1Title" xml:space="preserve">
+    <value>1. Kontakt a zadání</value>
+  </data>
+  <data name="ProcessStep1Text" xml:space="preserve">
+    <value>Ozvete se nám telefonicky nebo e-mailem. Stručně popíšete, co potřebujete vyřešit a v jakém rozsahu.</value>
+  </data>
+
+  <data name="ProcessStep2Title" xml:space="preserve">
+    <value>2. Konzultace a návrh řešení</value>
+  </data>
+  <data name="ProcessStep2Text" xml:space="preserve">
+    <value>Podíváme se na stav objektu, upřesníme možnosti realizace a navrhneme vhodný rozsah prací.</value>
+  </data>
+
+  <data name="ProcessStep3Title" xml:space="preserve">
+    <value>3. Realizace zakázky</value>
+  </data>
+  <data name="ProcessStep3Text" xml:space="preserve">
+    <value>Po domluvě termínu zahájíme práce. Během realizace dbáme na kvalitu provedení, komunikaci a pořádek na místě.</value>
+  </data>
+
+  <data name="ProcessStep4Title" xml:space="preserve">
+    <value>4. Předání hotové práce</value>
+  </data>
+  <data name="ProcessStep4Text" xml:space="preserve">
+    <value>Po dokončení zakázku společně projdeme a předáme hotový výsledek připravený k užívání.</value>
+  </data>
+
+  <data name="ContactKicker" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Máte zájem o rekonstrukci nebo stavební úpravy?</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Ozvěte se nám. Rádi s vámi probereme rozsah prací, orientační možnosti řešení i další postup. První kontakt je nezávazný.</value>
+  </data>
+  <data name="ContactButtonCall" xml:space="preserve">
+    <value>Zavolat</value>
+  </data>
+  <data name="ContactButtonEmail" xml:space="preserve">
+    <value>Napsat e-mail</value>
+  </data>
+  <data name="ContactMapPlaceholder" xml:space="preserve">
+    <value>Zde může být mapa nebo oblast působnosti firmy</value>
+  </data>
+  <data name="NavAbout" xml:space="preserve">
+    <value>O nás</value>
+  </data>
+  <data name="NavServices" xml:space="preserve">
+    <value>Služby</value>
+  </data>
+  <data name="NavProjects" xml:space="preserve">
+    <value>Realizace</value>
+  </data>
+  <data name="NavProcess" xml:space="preserve">
+    <value>Spolupráce</value>
+  </data>
+  <data name="NavContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+</root>

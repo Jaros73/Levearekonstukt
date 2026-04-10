@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="PageTitle" xml:space="preserve">
+    <value>LEVEA Rekonstrukt | Реконструкція квартир, будинків і фасадів</value>
+  </data>
+
+  <data name="HeroKicker" xml:space="preserve">
+    <value>Надійні будівельні роботи</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Реконструкція квартир, будинків, апартаментів і фасадів без зайвих ускладнень</value>
+  </data>
+  <data name="HeroText" xml:space="preserve">
+    <value>Ми виконуємо будівельні та ремонтні роботи — від дрібних змін до масштабніших проєктів. Для нас важливі чітка домовленість, якісне виконання та надійний перебіг усієї роботи.</value>
+  </data>
+  <data name="HeroButtonCall" xml:space="preserve">
+    <value>Подзвонити зараз</value>
+  </data>
+  <data name="HeroButtonContact" xml:space="preserve">
+    <value>Запит без зобов’язань</value>
+  </data>
+  <data name="HeroBenefit1" xml:space="preserve">
+    <value>Ремонт під ключ і часткові роботи</value>
+  </data>
+  <data name="HeroBenefit2" xml:space="preserve">
+    <value>Індивідуальний підхід до кожного проєкту</value>
+  </data>
+  <data name="HeroBenefit3" xml:space="preserve">
+    <value>Акцент на якості, термінах і порядку</value>
+  </data>
+  <data name="HeroImageAlt" xml:space="preserve">
+    <value>Реконструкція інтер’єру та будівельні роботи</value>
+  </data>
+
+  <data name="AboutKicker" xml:space="preserve">
+    <value>Про нас</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Ми спираємося на досвід, чесний підхід і якісний результат</value>
+  </data>
+  <data name="AboutText1" xml:space="preserve">
+    <value>LEVEA Rekonstrukt спеціалізується на реконструкції інтер’єрів та зовнішніх частин будівель. Ми допомагаємо клієнтам перетворювати старі приміщення на сучасні, практичні та довговічні рішення.</value>
+  </data>
+  <data name="AboutText2" xml:space="preserve">
+    <value>Кожен проєкт ми реалізуємо з урахуванням стану об’єкта, бюджету та очікувань замовника. Ми не даємо порожніх обіцянок, а робимо ставку на чесно виконану роботу та зрозумілу комунікацію.</value>
+  </data>
+  <data name="AboutBullet1" xml:space="preserve">
+    <value>Реконструкція квартир, приватних будинків та апартаментів</value>
+  </data>
+  <data name="AboutBullet2" xml:space="preserve">
+    <value>Ремонт і оновлення фасадів та зовнішніх частин будівель</value>
+  </data>
+  <data name="AboutBullet3" xml:space="preserve">
+    <value>Надійний процес від запиту до завершення робіт</value>
+  </data>
+  <data name="AboutImageAlt" xml:space="preserve">
+    <value>Приклад будівельної реалізації компанії LEVEA Rekonstrukt</value>
+  </data>
+
+  <data name="ServicesKicker" xml:space="preserve">
+    <value>Наші послуги</value>
+  </data>
+  <data name="ServicesTitle" xml:space="preserve">
+    <value>Що ми можемо для вас зробити</value>
+  </data>
+
+  <data name="Service1Title" xml:space="preserve">
+    <value>Реконструкція квартир</value>
+  </data>
+  <data name="Service1Text" xml:space="preserve">
+    <value>Повна або часткова реконструкція квартир, включно зі зміною планування, оздобленням поверхонь і будівельними деталями.</value>
+  </data>
+
+  <data name="Service2Title" xml:space="preserve">
+    <value>Реконструкція приватних будинків</value>
+  </data>
+  <data name="Service2Text" xml:space="preserve">
+    <value>Оновлення старіших будинків, модернізація інтер’єрів та будівельні зміни для кращої функціональності, комфорту й довговічності.</value>
+  </data>
+
+  <data name="Service3Title" xml:space="preserve">
+    <value>Реконструкція апартаментів</value>
+  </data>
+  <data name="Service3Text" xml:space="preserve">
+    <value>Оновлення апартаментів для власного проживання або оренди з акцентом на практичність, чистий вигляд і якісне виконання.</value>
+  </data>
+
+  <data name="Service4Title" xml:space="preserve">
+    <value>Фасади та зовнішні роботи</value>
+  </data>
+  <data name="Service4Text" xml:space="preserve">
+    <value>Ремонт фасадів, оновлення поверхонь та інші зовнішні роботи, які покращують вигляд будівлі та її захист від погоди.</value>
+  </data>
+
+  <data name="Service5Title" xml:space="preserve">
+    <value>Мулярські та оздоблювальні роботи</value>
+  </data>
+  <data name="Service5Text" xml:space="preserve">
+    <value>Штукатурка, вирівнювання поверхонь, дрібні будівельні втручання та інші роботи, потрібні для якісного завершення проєкту.</value>
+  </data>
+
+  <data name="Service6Title" xml:space="preserve">
+    <value>Будівельні роботи під замовлення</value>
+  </data>
+  <data name="Service6Text" xml:space="preserve">
+    <value>Кожен об’єкт різний. Ми запропонуємо відповідний порядок робіт залежно від реального стану будівлі та ваших вимог.</value>
+  </data>
+
+  <data name="ProjectsKicker" xml:space="preserve">
+    <value>Реалізації</value>
+  </data>
+  <data name="ProjectsTitle" xml:space="preserve">
+    <value>Приклади нашої роботи</value>
+  </data>
+  <data name="ProjectsIntro" xml:space="preserve">
+    <value>Кожне замовлення має свій обсяг, технічний стан і вимоги. Нижче ви знайдете приклади наших робіт, де видно увагу до деталей, практичність і кінцевий результат.</value>
+  </data>
+  <data name="ProjectImage1Alt" xml:space="preserve">
+    <value>Реконструкція інтер’єру квартири</value>
+  </data>
+  <data name="ProjectImage2Alt" xml:space="preserve">
+    <value>Будівельні зміни в будинку</value>
+  </data>
+  <data name="ProjectImage3Alt" xml:space="preserve">
+    <value>Оновлення апартаментів</value>
+  </data>
+  <data name="ProjectImage4Alt" xml:space="preserve">
+    <value>Оновлення фасаду та зовнішніх частин будівлі</value>
+  </data>
+
+  <data name="ProcessKicker" xml:space="preserve">
+    <value>Співпраця</value>
+  </data>
+  <data name="ProcessTitle" xml:space="preserve">
+    <value>Простий і зрозумілий процес</value>
+  </data>
+
+  <data name="ProcessStep1Title" xml:space="preserve">
+    <value>1. Контакт і запит</value>
+  </data>
+  <data name="ProcessStep1Text" xml:space="preserve">
+    <value>Зв’яжіться з нами телефоном або електронною поштою та коротко опишіть, що саме потрібно зробити і в якому обсязі.</value>
+  </data>
+
+  <data name="ProcessStep2Title" xml:space="preserve">
+    <value>2. Консультація та пропозиція рішення</value>
+  </data>
+  <data name="ProcessStep2Text" xml:space="preserve">
+    <value>Ми оцінимо стан об’єкта, уточнимо можливості реалізації та запропонуємо відповідний обсяг робіт.</value>
+  </data>
+
+  <data name="ProcessStep3Title" xml:space="preserve">
+    <value>3. Виконання робіт</value>
+  </data>
+  <data name="ProcessStep3Text" xml:space="preserve">
+    <value>Після узгодження терміну ми починаємо роботи. Під час реалізації дбаємо про якість виконання, комунікацію та порядок на місці.</value>
+  </data>
+
+  <data name="ProcessStep4Title" xml:space="preserve">
+    <value>4. Передача готового результату</value>
+  </data>
+  <data name="ProcessStep4Text" xml:space="preserve">
+    <value>Після завершення ми разом перевіримо результат і передамо готову роботу, підготовлену до використання.</value>
+  </data>
+
+  <data name="ContactKicker" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Потрібна реконструкція або будівельні роботи?</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Зв’яжіться з нами. Ми обговоримо обсяг робіт, можливі варіанти рішення та подальші кроки. Перший контакт не зобов’язує ні до чого.</value>
+  </data>
+  <data name="ContactButtonCall" xml:space="preserve">
+    <value>Подзвонити</value>
+  </data>
+  <data name="ContactButtonEmail" xml:space="preserve">
+    <value>Написати e-mail</value>
+  </data>
+  <data name="ContactMapPlaceholder" xml:space="preserve">
+    <value>Тут може бути карта або зона обслуговування компанії</value>
+  </data>
+  <data name="NavAbout" xml:space="preserve">
+    <value>Про нас</value>
+  </data>
+  <data name="NavServices" xml:space="preserve">
+    <value>Послуги</value>
+  </data>
+  <data name="NavProjects" xml:space="preserve">
+    <value>Реалізації</value>
+  </data>
+  <data name="NavProcess" xml:space="preserve">
+    <value>Співпраця</value>
+  </data>
+  <data name="NavContact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+</root>

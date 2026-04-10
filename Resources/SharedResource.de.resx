@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="PageTitle" xml:space="preserve">
+    <value>LEVEA Rekonstrukt | Renovierungen von Wohnungen, Häusern und Fassaden</value>
+  </data>
+
+  <data name="HeroKicker" xml:space="preserve">
+    <value>Zuverlässige Bauarbeiten</value>
+  </data>
+  <data name="HeroTitle" xml:space="preserve">
+    <value>Renovierungen von Wohnungen, Häusern, Apartments und Fassaden ohne unnötige Komplikationen</value>
+  </data>
+  <data name="HeroText" xml:space="preserve">
+    <value>Wir führen Bau- und Renovierungsarbeiten von kleineren Anpassungen bis hin zu umfangreicheren Projekten durch. Dabei legen wir Wert auf klare Absprachen, saubere Ausführung und einen verlässlichen Ablauf.</value>
+  </data>
+  <data name="HeroButtonCall" xml:space="preserve">
+    <value>Jetzt anrufen</value>
+  </data>
+  <data name="HeroButtonContact" xml:space="preserve">
+    <value>Unverbindliche Anfrage</value>
+  </data>
+  <data name="HeroBenefit1" xml:space="preserve">
+    <value>Schlüsselfertige Renovierungen und Teilgewerke</value>
+  </data>
+  <data name="HeroBenefit2" xml:space="preserve">
+    <value>Individueller Ansatz für jedes Projekt</value>
+  </data>
+  <data name="HeroBenefit3" xml:space="preserve">
+    <value>Fokus auf Qualität, Termine und Sauberkeit</value>
+  </data>
+  <data name="HeroImageAlt" xml:space="preserve">
+    <value>Innenrenovierung und Bauarbeiten</value>
+  </data>
+
+  <data name="AboutKicker" xml:space="preserve">
+    <value>Über uns</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Wir bauen auf Erfahrung, Fairness und ein gutes Ergebnis</value>
+  </data>
+  <data name="AboutText1" xml:space="preserve">
+    <value>LEVEA Rekonstrukt konzentriert sich auf Innen- und Außenrenovierungen. Wir helfen unseren Kunden, ältere Räume in moderne, funktionale und langlebige Lösungen zu verwandeln.</value>
+  </data>
+  <data name="AboutText2" xml:space="preserve">
+    <value>Jedes Projekt wird mit Blick auf den Zustand der Immobilie, das Budget und die Erwartungen des Auftraggebers umgesetzt. Wir arbeiten nicht mit leeren Versprechen, sondern mit ehrlicher Arbeit und klarer Kommunikation.</value>
+  </data>
+  <data name="AboutBullet1" xml:space="preserve">
+    <value>Renovierungen von Wohnungen, Einfamilienhäusern und Apartments</value>
+  </data>
+  <data name="AboutBullet2" xml:space="preserve">
+    <value>Reparaturen und Erneuerung von Fassaden und Außenbereichen</value>
+  </data>
+  <data name="AboutBullet3" xml:space="preserve">
+    <value>Zuverlässiger Ablauf von der Anfrage bis zur Übergabe</value>
+  </data>
+  <data name="AboutImageAlt" xml:space="preserve">
+    <value>Beispiel einer Bauausführung von LEVEA Rekonstrukt</value>
+  </data>
+
+  <data name="ServicesKicker" xml:space="preserve">
+    <value>Unsere Leistungen</value>
+  </data>
+  <data name="ServicesTitle" xml:space="preserve">
+    <value>Was wir für Sie übernehmen</value>
+  </data>
+
+  <data name="Service1Title" xml:space="preserve">
+    <value>Wohnungsrenovierungen</value>
+  </data>
+  <data name="Service1Text" xml:space="preserve">
+    <value>Komplette oder teilweise Renovierungen von Wohnungen einschließlich Grundrissänderungen, Oberflächen und baulichen Details.</value>
+  </data>
+
+  <data name="Service2Title" xml:space="preserve">
+    <value>Renovierungen von Einfamilienhäusern</value>
+  </data>
+  <data name="Service2Text" xml:space="preserve">
+    <value>Modernisierung älterer Häuser, Erneuerung von Innenräumen und bauliche Anpassungen für mehr Komfort, Funktion und Langlebigkeit.</value>
+  </data>
+
+  <data name="Service3Title" xml:space="preserve">
+    <value>Renovierungen von Apartments</value>
+  </data>
+  <data name="Service3Text" xml:space="preserve">
+    <value>Umbauten von Apartments für Eigennutzung oder Vermietung mit Fokus auf praktische Lösungen und ein sauberes Erscheinungsbild.</value>
+  </data>
+
+  <data name="Service4Title" xml:space="preserve">
+    <value>Fassaden und Außenarbeiten</value>
+  </data>
+  <data name="Service4Text" xml:space="preserve">
+    <value>Fassadenreparaturen, Oberflächenerneuerung und weitere Außenarbeiten zur Verbesserung von Optik und Witterungsschutz.</value>
+  </data>
+
+  <data name="Service5Title" xml:space="preserve">
+    <value>Maurer- und Ausbauarbeiten</value>
+  </data>
+  <data name="Service5Text" xml:space="preserve">
+    <value>Putzarbeiten, Flächenausgleich, kleinere bauliche Eingriffe und weitere Arbeiten für ein sauberes Endergebnis.</value>
+  </data>
+
+  <data name="Service6Title" xml:space="preserve">
+    <value>Individuelle Bauanpassungen</value>
+  </data>
+  <data name="Service6Text" xml:space="preserve">
+    <value>Jede Immobilie ist anders. Wir schlagen den passenden Arbeitsablauf entsprechend dem tatsächlichen Zustand des Objekts und Ihren Anforderungen vor.</value>
+  </data>
+
+  <data name="ProjectsKicker" xml:space="preserve">
+    <value>Referenzarbeiten</value>
+  </data>
+  <data name="ProjectsTitle" xml:space="preserve">
+    <value>Beispiele unserer Arbeit</value>
+  </data>
+  <data name="ProjectsIntro" xml:space="preserve">
+    <value>Jedes Projekt hat einen anderen Umfang, Zustand und Anspruch. Nachfolgend sehen Sie Beispiele unserer Arbeiten mit Fokus auf Detail, Funktionalität und das Gesamtergebnis.</value>
+  </data>
+  <data name="ProjectImage1Alt" xml:space="preserve">
+    <value>Innenrenovierung einer Wohnung</value>
+  </data>
+  <data name="ProjectImage2Alt" xml:space="preserve">
+    <value>Bauliche Anpassungen an einem Haus</value>
+  </data>
+  <data name="ProjectImage3Alt" xml:space="preserve">
+    <value>Renovierung eines Apartments</value>
+  </data>
+  <data name="ProjectImage4Alt" xml:space="preserve">
+    <value>Erneuerung von Fassade und Außenbereichen</value>
+  </data>
+
+  <data name="ProcessKicker" xml:space="preserve">
+    <value>Zusammenarbeit</value>
+  </data>
+  <data name="ProcessTitle" xml:space="preserve">
+    <value>Einfacher und klarer Ablauf</value>
+  </data>
+
+  <data name="ProcessStep1Title" xml:space="preserve">
+    <value>1. Kontakt und Anfrage</value>
+  </data>
+  <data name="ProcessStep1Text" xml:space="preserve">
+    <value>Sie kontaktieren uns telefonisch oder per E-Mail und beschreiben kurz, was Sie benötigen und in welchem Umfang.</value>
+  </data>
+
+  <data name="ProcessStep2Title" xml:space="preserve">
+    <value>2. Beratung und Lösungsvorschlag</value>
+  </data>
+  <data name="ProcessStep2Text" xml:space="preserve">
+    <value>Wir prüfen den Zustand des Objekts, klären die Möglichkeiten und schlagen einen geeigneten Arbeitsumfang vor.</value>
+  </data>
+
+  <data name="ProcessStep3Title" xml:space="preserve">
+    <value>3. Ausführung der Arbeiten</value>
+  </data>
+  <data name="ProcessStep3Text" xml:space="preserve">
+    <value>Nach Terminvereinbarung beginnen wir mit den Arbeiten. Während der Umsetzung achten wir auf Qualität, Kommunikation und Ordnung auf der Baustelle.</value>
+  </data>
+
+  <data name="ProcessStep4Title" xml:space="preserve">
+    <value>4. Übergabe</value>
+  </data>
+  <data name="ProcessStep4Text" xml:space="preserve">
+    <value>Nach Abschluss gehen wir das Ergebnis gemeinsam durch und übergeben die fertige Arbeit zur Nutzung.</value>
+  </data>
+
+  <data name="ContactKicker" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Benötigen Sie eine Renovierung oder bauliche Anpassungen?</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Kontaktieren Sie uns. Gern besprechen wir mit Ihnen den Umfang der Arbeiten, mögliche Lösungen und den weiteren Ablauf. Die erste Anfrage ist unverbindlich.</value>
+  </data>
+  <data name="ContactButtonCall" xml:space="preserve">
+    <value>Anrufen</value>
+  </data>
+  <data name="ContactButtonEmail" xml:space="preserve">
+    <value>E-Mail senden</value>
+  </data>
+  <data name="ContactMapPlaceholder" xml:space="preserve">
+    <value>Hier kann eine Karte oder das Einsatzgebiet der Firma angezeigt werden</value>
+  </data>
+  <data name="NavAbout" xml:space="preserve">
+    <value>Über uns</value>
+  </data>
+  <data name="NavServices" xml:space="preserve">
+    <value>Leistungen</value>
+  </data>
+  <data name="NavProjects" xml:space="preserve">
+    <value>Projekte</value>
+  </data>
+  <data name="NavProcess" xml:space="preserve">
+    <value>Ablauf</value>
+  </data>
+  <data name="NavContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+</root>
